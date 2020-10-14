@@ -1,0 +1,15 @@
+{
+    "name": "vendor/mon-petit-m-c-v",
+    "description": "Description of project MonPetitMCV.",
+    "authors": [
+        {
+            "name": "adrien.poignard",
+            "email": "your@email.here"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "APP\\": "src",
+        "Tools\\": "includes"
+    }
+}
