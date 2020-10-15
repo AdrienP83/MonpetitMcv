@@ -11,7 +11,7 @@
  *
  * @author adrien.poignard
  */
-namespace APP\Modele;
+namespace APP\Model;
 class GestionClientModel {
     //put your code here
 }
