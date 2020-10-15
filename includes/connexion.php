@@ -11,8 +11,9 @@
  *
  * @author adrien.poignard
  */
+namespace Tools;
 class connexion {
-    
+
  
 
     private static $connexion = null;

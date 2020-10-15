@@ -17,7 +17,7 @@ use APP\Entity\Client;
 use Tools\connexion;
 class GestionClientModel {
     public function find($id){
-        $unObjetPdo = \connexion::getConnexion();
+        $unObjetPdo = connexion::getConnexion();
         $sql = "select * from CLIENT where id=:id";
         $ligne->bindValue(':id',$id,PDO::PARAM_INT);
         $ligne->execute();
