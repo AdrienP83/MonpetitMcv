@@ -12,6 +12,15 @@
  * @author adrien.poignard
  */
 namespace APP\Model;
+use PDO;
+use APP\Entity\Client;
+use Tools\connexion;
 class GestionClientModel {
-    //put your code here
+    public function find($id){
+        $unObjetPdo = \connexion::getConnexion();
+        $sql = "select * from CLIENT where id=:id";
+        $ligne->bindValue(':id',$id,PDO::PARAM_INT);
+        $ligne->execute();
+        return $ligne->fetchObject(Client::class);
+    }
 }
